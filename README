@@ -1,0 +1,11 @@
+This project calculates price for items scanned during checkout and applies
+discount rules specified in pricing_rules/list.rb as a hash of options.
+Interface for checkout object is as specified in description of this task:
+co = Checkout.new(pricing_rules)
+co.scan(item)
+co.scan(item)
+price = co.total
+Where pricing_rules is an array of keys for hashes specified in pricing_rules/list.rb.
+item is symbolized product code (e.g. :FR1)
+To see how it all behaves install gem rspec and run command rspec
+in terminal in root directory of this folder.
